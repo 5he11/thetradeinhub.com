@@ -27,6 +27,17 @@
 
     <link href="www.thetradeinhub.co.nz/Areas/Shop/css/template/a-1/a-1_v_4.0.1.css" rel="stylesheet">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HV6NZ27T2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5HV6NZ27T2');
+</script>
+
 <body>
     <div id="container">
         <div class="banner_top" style="background-image:url('cdn.oss.justcar.top/justcar/image/202411/30/b843aabd-eb31-4ff0-b751-a335fd9cc8a8.jpg.jpeg')">
@@ -94,7 +105,7 @@
                 </div>
 
                 <div class="opration">
-                    <a href="tel:099491999" class="opration_btn enquiry" > <img style="width: 8px;height: 10px;vertical-align:top;margin-right: 6px;margin-top:20px;" src="www.thetradeinhub.co.nz/images/enquiry.png" alt="">Enquiry Now</a>
+                    <a href="tel:099491999" class="opration_btn enquiry"> <img style="width: 8px;height: 10px;vertical-align:top;margin-right: 6px;margin-top:20px;" src="www.thetradeinhub.co.nz/images/enquiry.png" alt="">Enquiry Now</a>
                 </div>
             </div>
         </div>
@@ -625,12 +636,58 @@
         </div>
 
         <style>
-            .loading_layer { position: absolute; z-index: 10000; left: 0; right: 0; top: 0; bottom: 0; user-select: none; }
-            .loading_layer_contain { width: 160px; height: 160px; position: absolute; left: 50%; top: 50%; margin-left: -80px; margin-top: -80px; }
-            .layer_success_box { top: 50%; margin-top: -80px; width: 100%; position: absolute; z-index: 10000; user-select: none; }
-            .layer_success_box .loading_success_pic { display: block; margin: 0 auto; width: 160px; height: 160px; }
-            .layer_success_box .success_box_title { text-align: center; font-size: 20px; font-weight: bold; color: #333333; line-height: 32px; margin-top: 20px; }
-            .layer_success_box .success_box_subtitle { text-align: center; font-size: 14px; font-weight: normal; color: #999999; line-height: 32px; }
+            .loading_layer {
+                position: absolute;
+                z-index: 10000;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                user-select: none;
+            }
+
+            .loading_layer_contain {
+                width: 160px;
+                height: 160px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -80px;
+                margin-top: -80px;
+            }
+
+            .layer_success_box {
+                top: 50%;
+                margin-top: -80px;
+                width: 100%;
+                position: absolute;
+                z-index: 10000;
+                user-select: none;
+            }
+
+                .layer_success_box .loading_success_pic {
+                    display: block;
+                    margin: 0 auto;
+                    width: 160px;
+                    height: 160px;
+                }
+
+                .layer_success_box .success_box_title {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #333333;
+                    line-height: 32px;
+                    margin-top: 20px;
+                }
+
+                .layer_success_box .success_box_subtitle {
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #999999;
+                    line-height: 32px;
+                }
         </style>
 
         <div id="enquiry" style="display:none;">
@@ -655,7 +712,7 @@
                 <div class="success_box_subtitle">Thank you! Our staff will contact you as soon as they receive the information.</div>
             </div>
             <div class="layer_contain_box" style="margin-left:20px;">
-                
+
             </div>
         </div>
 
@@ -674,7 +731,7 @@
             $('#car_detail_pre_box_top_contain').on('beforeChange', function (event, slick, currentSlide, nextSlide) { if (nextSlide >= 0 && nextSlide < $("#car_detail_pre_box_bottom_contain .car_pic").length) { $("#car_detail_pre_box_bottom_contain .car_pic").removeClass("active"); $($("#car_detail_pre_box_bottom_contain .car_pic")[nextSlide]).addClass("active"); $("#car_detail_pre_box_top_cur").html(nextSlide + 1); initTopArrow(nextSlide); } });
             $('#car_detail_pre_box_bottom_contain').on('beforeChange', function (event, slick, currentSlide, nextSlide) { if (nextSlide > currentSlide) { $("#car_detail_pre_box_bottom_contain .car_pic.active").parents(".slick-slide:first").next().find(".banner_contain").click(); } if (nextSlide < currentSlide) { $("#car_detail_pre_box_bottom_contain .car_pic.active").parents(".slick-slide:first").prev().find(".banner_contain").click(); } initBottomArrow(nextSlide); });
             function openVideoLayer(url) { aiya.ajaxGet('www.thetradeinhub.co.nz/site/youtube?url=' + url, function (result) { layer.open({ type: 1, title: '', area: ['600px', '404px'], shadeClose: true, content: result }); }); }
-            function openCar360Video(sku_id) { layer.open({ type: 1, title: '', area: ['600px', '450px'], shadeClose: true, content: '<div style="width:100%;height:100%;background:#000;"><iframe style="width:100%;height:100%;display:block;" src="https://assets.spyne.ai/360?sku_id=' + sku_id +'&showHotspot=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>' }); }
+            function openCar360Video(sku_id) { layer.open({ type: 1, title: '', area: ['600px', '450px'], shadeClose: true, content: '<div style="width:100%;height:100%;background:#000;"><iframe style="width:100%;height:100%;display:block;" src="https://assets.spyne.ai/360?sku_id=' + sku_id + '&showHotspot=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>' }); }
             function showWholesalePrice(carId) { aiya.ajaxPost('www.thetradeinhub.co.nz/car/showWholesalePrice', { carId: carId }, function (result) { layer.open({ type: 1, title: '', area: ['680px', '355px'], shadeClose: true, content: result }); }); }
             function checkDealerMobile(carId) { aiya.ajaxPost('www.thetradeinhub.co.nz/car/checkdealermobile', { mobile: $("#wholesale_price_mobile").val(), car_id: carId }, function (result) { if (result.code == 10000) { $("#wholesale_price_box .wholesale_price_amount").html(result.data); $("#wholesale_price_box").show(); $("#wholesale_price_layer_input_box").hide(); } else { aiya.toast(result.message, 2); } }); }
         </script>
