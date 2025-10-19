@@ -1,0 +1,144 @@
+ 
+    
+    .banner_top {
+        min-width: 1200px;
+        background: no-repeat center 0px;
+        overflow:hidden;
+        background-size: 1920px auto;
+        position:relative;
+    }
+.top_banner_box {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.top_banner_item_pic {
+    height: 750px;
+    background-size: 1920px auto;
+    background-position:center top;
+}
+
+.banner_bottom {
+    min-width: 1200px;
+    height: 530px;
+    display: none;
+}
+    /*顶部的店铺信息*/
+    
+    .shop_info {
+        height: 148px;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        min-width: 1200px;
+        position:relative;
+    }
+    
+    .shop_info .w {
+        position: relative;
+    }
+    
+    .shop_info .shop_logo {
+        height: 90px;
+        vertical-align: top;
+        margin-top: 29px;
+        display: inline-block;
+    }
+    
+    .shop_info_left {
+        position: absolute;
+        width: 500px;
+        text-align: left;
+        top: 32px;
+        left: 0;
+    }
+    
+    .shop_info_left .item {
+        height: 30px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-right: 16px;
+        font-size: 16px;
+    }
+    
+    .shop_info_left .item .des {
+        display: inline-block;
+    }
+    
+    .shop_info_left .icon {
+     
+        width: 16px;
+        height: 16px;
+        vertical-align: top;
+        margin-top: 7px;
+        margin-right: 3px;
+    }
+    
+    .shop_info_left .tel {
+        display: inline-block;
+    }
+    
+    .shop_info_left .phone {
+        display: inline-block;
+        color: #EB5A17;
+    }
+    
+    .shop_info_left .location {
+        display: block;
+        font-size: 14px;
+    }
+    /*导航*/
+    .nav {
+        width: 100%;
+        background-color: rgba(29, 29, 29, 0.76);
+        min-width: 1200px;
+        position:relative;
+    }
+    
+    .nav .w {
+        height: 72px;
+        line-height: 72px;
+    }
+    
+    .nav .nav_inner_ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+    .nav .nav_inner_ul li {
+        float: left;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .nav .nav_inner_ul li a {
+        font-size: 20px;
+        color: #FFFFFF;
+        display: block;
+        text-decoration: none;
+        z-index: 1;
+        position: relative;
+        vertical-align: top;
+
+    }
+    
+    .nav .nav_arrow {
+        width: 12px;
+        height: 12px;
+        vertical-align: top;
+        margin-left: 7px;
+        margin-top: 30px;
+    }
+    
+
+    
+    .nav .nav_inner_ul li:hover {
+       background: rgba(52, 52, 52, 0.76);
+    }
+    
+    .nav .nav_inner_ul li.cur {
+        background: linear-gradient(90deg, rgba(242, 133, 38, 1) 0%, rgba(248, 160, 46, 1) 100%);
+    }

@@ -1,0 +1,624 @@
+body {
+    min-width:1200px;
+}
+pre{line-height:26px;}
+
+.unselect {
+    user-select: none;
+}
+
+.h1 {
+    font-family: Arial;
+    font-size: 26px;
+}
+
+.h2 {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color:#555;
+}
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+    ol, ul {
+    list-style: none;
+}
+/*车辆列表开始*/
+.car_list,
+.car_list .car_item {
+    list-style: none;
+}
+
+.car_list {
+    padding-left: 15px;
+}
+.car_list .video_btn {
+    width:40px;
+    height:40px;
+    left:8px;
+    top:-48px;
+    position: absolute;
+    z-index: 2;
+    cursor:pointer;
+}
+.car_list .video_btn .video_btn_contain {
+    width:40px;
+    height:40px;
+    display:inline-block;
+    vertical-align:top;
+}
+    .car_list .car_item {
+        width: 386px;
+        height: 290px;
+        position: relative;
+        margin-right: 6px;
+        margin-bottom: 14px;
+        float: left;
+    }
+
+    .car_list .car_pic {
+        width: 386px;
+        height: 290px;
+        background: no-repeat center center;
+        background-size: cover;
+    }
+
+    .car_list .car_des_box {
+        position: absolute;
+        bottom: 0;
+        width: 366px;
+        padding: 0 10px 0px 10px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .car_list .car_item:hover .car_des_box {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .car_list .car_title {
+        font-size: 15px;
+        line-height: 20px;
+        padding-top: 4px;
+        color: #ebebeb;
+    }
+
+    .car_list .car_base_info .price {
+        float: right;
+        line-height: 20px;
+        padding: 0px;
+        margin: 0;
+        font-size: 19px;
+        color: #f95523;
+    }
+
+    .car_list .car_base_info .adv {
+        float: left;
+    }
+
+        .car_list .car_base_info .adv img {
+            height: 16px;
+            width: auto;
+            border: 0;
+            vertical-align: top;
+            margin-top: 6px;
+        }
+
+    .car_list .car_character {
+        padding: 10px 0 0 0;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+
+    .car_list .car_item:hover .car_character {
+        height: 58px;
+    }
+
+    .car_list .car_character .car_character_item {
+        width: 33%;
+        float: left;
+    }
+
+    .car_list .car_character .car_character_icon {
+        vertical-align: top;
+        width: 18px;
+        height: 18px;
+        margin-top: 4px;
+        margin-left: 8px;
+        display: inline-block;
+    }
+
+    .car_list .car_character .car_character_des {
+        color: #ebebeb;
+        font-size: 12px;
+        line-height: 26px;
+        display: inline-block;
+    }
+    .car_list .car_base_info .price .orc {
+    font-size: 12px;
+}
+    .car_list .car_row_off {
+    background: url('../../../images/icon_row_off.png') no-repeat left center;
+    padding-left: 20px;
+    padding-right: 6px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 11px;
+    margin-top: 6px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    background-size: 100%;
+}
+
+/*平台车辆列表开始*/
+
+.common_car_list,
+.common_car_list .car_item {
+    list-style: none;
+    width: 1240px;
+}
+.common_car_list .video_btn {
+    width:40px;
+    height:40px;
+    left:8px;
+    bottom:8px;
+    position: absolute;
+    z-index: 2;
+    cursor:pointer;
+}
+.common_car_list .video_btn .video_btn_contain {
+    width:40px;
+    height:40px;
+    display:inline-block;
+    vertical-align:top;
+}
+    .common_car_list .car_item {
+        width: 386px;
+        height: 416px;
+        position: relative;
+        margin-right: 21px;
+        margin-bottom: 21px;
+        float: left;
+        background-color: #fff;
+    }
+
+        .common_car_list .car_item:hover {
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+    .common_car_list .car_pic {
+        width: 386px;
+        height: 288px;
+        background: no-repeat center center;
+        background-size: cover;
+        position:relative;
+    }
+
+    .common_car_list .car_character {
+        padding: 6px 0;
+    }
+
+    .common_car_list .car_des_box {
+        width: 366px;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    .common_car_list .car_title {
+        font-size: 17px;
+        line-height: 26px;
+        padding-top: 8px;
+        color: #222222;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .common_car_list .car_base_info {
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+        .common_car_list .car_base_info .price {
+            float: right;
+            line-height: 24px;
+            padding: 0px;
+            margin: 0;
+            font-size: 18px;
+            color: #f95523;
+        }
+
+            .common_car_list .car_base_info .price .orc {
+                font-size: 12px;
+            }
+
+
+
+.common_car_list .car_base_info .adv {
+    float: left;
+}
+
+    .common_car_list .car_base_info .adv img {
+        height: 16px;
+        width: auto;
+        border: 0;
+        vertical-align: top;
+        margin-top: 6px;
+    }
+
+.common_car_list .car_character .car_character_item {
+    width: 33%;
+    float: left;
+}
+
+.common_car_list .car_character .car_character_icon {
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.common_car_list .car_character .car_character_des {
+    color: #666;
+    font-size: 12px;
+    line-height: 26px;
+    display: inline-block;
+    max-width: 90px;
+    white-space: nowrap;
+}
+.common_car_list .car_row_off {
+    background: url('../../../images/icon_row_off.png') no-repeat left center;
+    padding-left: 20px;
+    padding-right: 6px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 11px;
+    margin-top: 6px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    background-size: 100%;
+}
+
+.pagination-container {
+    text-align: right;
+    margin-right: 10px;
+    display:inline-block;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #4E4E4E;
+    border-color: #4E4E4E;
+}
+
+
+
+
+
+/*部分页面的头部的车辆的展示*/
+.car_head {
+    border: 1px solid #ebebeb;
+    padding: 9px;
+    font-size: 14px;
+}
+
+    .car_head .title {
+        font-size: 18px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #222222;
+        line-height: 30px;
+        margin-top: 2px;
+    }
+
+    .car_head .car_des {
+        line-height: 40px;
+    }
+
+        .car_head .car_des .t_i {
+            color: #A1A1A1;
+            font-size: 15px;
+            float: left;
+        }
+
+            .car_head .car_des .t_i .icon_pad {
+                display: inline-block;
+                width: 1px;
+                height: 14px;
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: center;
+                vertical-align: top;
+                background-color: #bbb;
+                margin-top: 14px;
+            }
+
+        .car_head .car_des .t_price {
+            float: right;
+            color: #E94D19;
+            font-size: 28px;
+        }
+        .car_head .car_des .was_price {
+            color: #999;
+            text-decoration: line-through;
+            font-size: 20px;
+            display:inline-block;
+            margin-right:10px;
+        }
+
+    .car_head .car_base_info_right {
+        float: left;
+        width: 1000px;
+        margin-left: 20px;
+    }
+
+    .car_head .car_pic {
+        width: 148px;
+        height: 110px;
+        background: #DDDDDD no-repeat center center;
+        float: left;
+        margin-top: 0px;
+        background-size: cover;
+    }
+
+.comming_soon_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 80px;
+    z-index:1;
+}
+
+.sold_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 76px;
+    z-index:1;
+}
+
+.onsale_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 80px;
+    z-index:1;
+}
+.video-container{
+    position:absolute;
+    top:0;
+    width:100%;
+    min-width:1200px;
+    bottom:0;
+    height:100%;
+    overflow:hidden;
+}
+.video-container video{
+   width:100%;
+   height:100%; 
+   object-fit:cover;
+}
+
+
+.foot_normal_bar {
+    min-width: 1200px;
+    background-color: #3B3B3D;
+    padding-top: 44px;
+    margin-top:44px;
+}
+
+.foot_normal_bar .foot_normal_bar_contain {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.foot_normal_bar .foot_normal_bar_left {
+    float: left;
+    width: 299px;
+    height: 100px;
+}
+.foot_normal_bar .foot_normal_bar_left .shop_logo{
+    width: 240px;
+    margin-top: 10px;
+    height:80px;
+    background:no-repeat center center;
+    background-size:contain;
+}
+.foot_normal_bar .foot_normal_bar_right {
+    float: right;
+    width: 900px;
+    border-left: 1px solid #666666;
+    min-height: 100px;
+}
+.foot_normal_bar .foot_normal_search_label {
+    width:117px;
+    text-align: left;
+    margin-left: 56px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: #fff;
+    line-height: 23px;
+    padding-top: 7px;
+}
+.foot_normal_bar .foot_normal_search_list {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: inline-block;
+    vertical-align: top;
+    width: 714px;
+}
+.foot_normal_bar .foot_normal_search_item {
+    line-height: 23px;
+    opacity:0.5;
+    color: #DDDDDD;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    text-decoration: none;
+}
+.foot_normal_bar .foot_normal_search_list_vehicles .foot_normal_search_item{
+    width: 160px;
+}
+.foot_normal_bar .foot_normal_search_list_make .foot_normal_search_item{
+    width: 160px;
+}
+.foot_normal_bar .foot_normal_search_list_our_service .foot_normal_search_item{
+    width: 160px;
+}
+.foot_normal_bar .foot_normal_search_item:hover{
+    opacity:1;
+}
+.foot_normal_title_box {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+        margin-bottom: 4px;
+    margin-top: 15px;
+}
+
+.foot_normal_title {
+    min-width: 1200px;
+    text-align: center;
+    font-size: 56px;
+    color: #69696A;
+    line-height: 80px;
+}
+.foot_normal_title_left{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.foot_normal_title_box .login_btn {
+    line-height: 22px;
+    color: #A8B5F0;
+    font-size: 14px;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 29px;
+    height: 51px;
+}
+.foot_normal_contact_link {
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 27px;
+    margin-left:20px;
+}
+
+.foot_normal_contact_link .foot_normal_contact_link_pic_item {
+    width: 26px;
+    height: 26px;
+    margin-right: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.foot_normal_contact_link .foot_normal_contact_link_pic {
+    width: 26px;
+    height: 26px;
+}
+
+.foot_normal_contact_link .mask_code {
+    position: absolute;
+    left: 50%;
+    margin-left: -126px;
+    display: none;
+    margin-top: -170px;
+    width: 240px;
+    height: 120px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.foot_normal_contact_link .mask_code .tooltip-arrow {
+    top: 130px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0 5px;
+    border-top-color: #ffffff;
+    position: absolute;
+    border-style: solid;
+}
+
+.foot_normal_contact_link .mask_code_pic {
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+
+.foot_normal_contact_link .foot_normal_contact_link_pic_item:hover .mask_code {
+    display: block;
+}
+.foot_normal_info {
+    width: 1160px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    color: #999999;
+    line-height: 56px;
+    border-top: 1px solid #666666;
+}
+
+   body .layui-layer-dialog .layui-layer-content {
+    word-break:normal;
+}
+.foot_normal_bar.white {
+    background:#f7f7f7;
+}
+.foot_normal_bar.white .foot_normal_bar_right {
+    border-color: #eeeeee;
+}
+
+.foot_normal_bar.white .foot_normal_search_label {
+    color: #1d1f2e;
+}
+.foot_normal_bar.white .foot_normal_search_item {
+    color: #666666;
+    opacity: 1;
+}
+.foot_normal_bar.white .foot_normal_search_item:hover {
+    color: #1d1f2e;
+}
+.foot_normal_bar.white .foot_normal_title {
+    color: #ccc;
+}
+.foot_normal_bar.white .foot_normal_info {
+    border-color: #eeeeee;
+    color: #999;
+}
