@@ -26,17 +26,47 @@
     <meta property="og:image" content="/images/90d4906e-d5e0-440b-91cf-9934bf6d29e6.jpg">
 
     <link href="www.thetradeinhub.co.nz/Areas/Shop/css/template/a-1/a-1_v_4.0.1.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HV6NZ27T2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5HV6NZ27T2');
+    </script>
+    <!-- Event snippet for Click to call conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17664374480/kbqeCMan6K8bENDtg-dB',
+                'value': 1.0,
+                'currency': 'NZD',
+                'event_callback': callback
+            });
+            return false;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const callLinks = document.querySelectorAll('a[class*="callLink"]');
+
+            callLinks.forEach(callLink => {
+                callLink.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    gtag_report_conversion();
+                    window.location.href = callLink.href;
+                });
+            });
+        });
+    </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HV6NZ27T2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-5HV6NZ27T2');
-</script>
 
 <body>
     <div id="container">
@@ -62,7 +92,7 @@
                     <div class="shop_info_left">
                         <div class="item tel">
                             <img class="icon" src="www.thetradeinhub.co.nz/Areas/Shop/css/template/a-1/img/tel_icon.png" alt="">
-                            <span class="des" style="">09 949 1999</span>
+                            <span class="des" style=""><a href="tel:099491999" class="callLink">09 949 1999</a></span>
                         </div>
                         <br>
                         <a class="item tel" href="mailto:admin@thetradeinhub.co.nz">
@@ -105,7 +135,7 @@
                 </div>
 
                 <div class="opration">
-                    <a href="tel:099491999" class="opration_btn enquiry"> <img style="width: 8px;height: 10px;vertical-align:top;margin-right: 6px;margin-top:20px;" src="www.thetradeinhub.co.nz/images/enquiry.png" alt="">Enquiry Now</a>
+                    <a href="tel:099491999" class="opration_btn enquiry callLink"> <img style="width: 8px;height: 10px;vertical-align:top;margin-right: 6px;margin-top:20px;" src="www.thetradeinhub.co.nz/images/enquiry.png" alt="">Enquiry Now</a>
                 </div>
             </div>
         </div>
@@ -358,7 +388,7 @@
                     <div class="car_base_info_des">
                         <div style="float:left;padding-top:11px;"></div>
                         <div class="opration">
-                            <a href="tel:099491999" class="opration_btn enquiry"> <img style="width: 8px;height: 10px;vertical-align:top;margin-right: 6px;margin-top:20px;" src="www.thetradeinhub.co.nz/images/enquiry.png" alt="">Enquiry Now</a>
+                            <a href="tel:099491999" class="opration_btn enquiry callLink"> <img style="width: 8px;height: 10px;vertical-align:top;margin-right: 6px;margin-top:20px;" src="www.thetradeinhub.co.nz/images/enquiry.png" alt="">Enquiry Now</a>
                         </div>
                     </div>
                 </div>
@@ -392,7 +422,7 @@
                             <div class="month_item active" onclick="aiya.car.detail.changeTerm(this,4117)" data-month="60">60 mths</div>
                         </div>
                     </div>
-                    <a class="finance_submit_btn" href="tel:099491999">
+                    <a class="finance_submit_btn callLink" href="tel:099491999">
                         <img class="finance_submit_pic" src="www.thetradeinhub.co.nz/images/finance_submit_pic.png" alt="">
                         <div class="finance_submit_text">Apply for Finance</div>
                     </a>
@@ -566,7 +596,7 @@
                             <img class="contact_info_icon" src="www.thetradeinhub.co.nz/images/v2/shop_dianhua_2x.png">
                             <div class="contact_info_right">
                                 <div class="contact_info_label">Phone:</div>
-                                <a class="contact_info_des" href="tel:099491999">09 949 1999</a>
+                                <a class="contact_info_des callLink" href="tel:099491999">09 949 1999</a>
                             </div>
                         </div>
                         <div class="contact_info_item clear">
